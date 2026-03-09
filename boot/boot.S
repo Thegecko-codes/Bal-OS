@@ -13,11 +13,11 @@ _start:
   ldr x1, = _bss_end
   mov x2, #0
 
-  _bss_loop:
+  bss_loop:
     cmp x0, x1
     beq done
     str x2, [x0], #8
-    b _bss_loop
+    b bss_loop
 
   done:
     bl kernel_main
