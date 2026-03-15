@@ -9,6 +9,9 @@ This is a project that I don't think will come anywhere near to finishing but wh
 <h1>
   How to run:-
 </h1>
+<h2>Using Linux</h2>
 <p>
-  qemu-system-aarch64 -machine virt -cpu cortex-a57 -nographic -kernel kernel.elf (linux)
+```
+  qemu-system-aarch64 -machine virt -cpu cortex-a57 -nographic -kernel kernel.elf
+``` 
 </p>
