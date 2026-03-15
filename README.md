@@ -8,5 +8,7 @@ This is a project that I don't think will come anywhere near to finishing but wh
 </p>
 <h3>
   How to run:-
-  qemu-system-aarch64 -machine virt -cpu cortex-a57 -nographic -kernel kernel.elf (linux)
 </h3>
+<h5>
+  qemu-system-aarch64 -machine virt -cpu cortex-a57 -nographic -kernel kernel.elf (linux)
+</h5>
