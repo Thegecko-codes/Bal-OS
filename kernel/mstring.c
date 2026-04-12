@@ -16,3 +16,13 @@ char* mstrcat(char *dest, const char *src)
   dest[i + j] = '\0';
   return dest;
 }
+bool mstrcmp(const char *s1, const char *s2)
+{
+  int ret = 0;
+  while (!(ret = *(unsigned char *) s1 - *(unsigned char *) s2) && *s2)
+    ++s1, ++s2;
+  if(ret == 0)
+    return false;
+  else if(ret > 0)
+    return true;
+}

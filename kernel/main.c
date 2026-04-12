@@ -26,11 +26,13 @@ void kernel_main(void){
       letter[1] = '\0';
       mstrcat(word, letter);
     }
-    uart_printc('\n');
-    if(word == "spit")
-      uart_prints("The spit command has not been initialised yet. Please wait for the next update");
+    if(mstrcmp(word, "help"))
+      uart_prints("Minimal OS: The help command is not implemented right now");   
     else
-     uart_prints(word);
-    uart_printc('\n');
+    {
+      uart_printc('\n');
+      uart_prints(word);
+      uart_printc('\n');
+    }
   }
 }
